@@ -121,7 +121,7 @@ class VikiIE(VikiBaseIE):
     IE_NAME = 'viki'
     _VALID_URL = r'%s(?:videos|player)/(?P<id>[0-9]+v)' % VikiBaseIE._VALID_URL_BASE
     _TESTS = [{
-        'url': 'http://www.viki.com/videos/1023585v-heirs-episode-14',
+        'url': 'https://www.viki.com/videos/1023585v-heirs-episode-14',
         'info_dict': {
             'id': '1023585v',
             'ext': 'mp4',
@@ -134,7 +134,7 @@ class VikiIE(VikiBaseIE):
         'skip': 'Blocked in the US',
     }, {
         # clip
-        'url': 'http://www.viki.com/videos/1067139v-the-avengers-age-of-ultron-press-conference',
+        'url': 'https://www.viki.com/videos/1067139v-the-avengers-age-of-ultron-press-conference',
         'md5': '86c0b5dbd4d83a6611a79987cc7a1989',
         'info_dict': {
             'id': '1067139v',
@@ -149,7 +149,7 @@ class VikiIE(VikiBaseIE):
             'age_limit': 0,
         }
     }, {
-        'url': 'http://www.viki.com/videos/1048879v-ankhon-dekhi',
+        'url': 'https://www.viki.com/videos/1048879v-ankhon-dekhi',
         'info_dict': {
             'id': '1048879v',
             'ext': 'mp4',
@@ -164,7 +164,7 @@ class VikiIE(VikiBaseIE):
         'skip': 'Blocked in the US',
     }, {
         # episode
-        'url': 'http://www.viki.com/videos/44699v-boys-over-flowers-episode-1',
+        'url': 'https://www.viki.com/videos/44699v-boys-over-flowers-episode-1',
         'md5': '5fa476a902e902783ac7a4d615cdbc7a',
         'info_dict': {
             'id': '44699v',
@@ -180,7 +180,7 @@ class VikiIE(VikiBaseIE):
         }
     }, {
         # youtube external
-        'url': 'http://www.viki.com/videos/50562v-poor-nastya-complete-episode-1',
+        'url': 'https://www.viki.com/videos/50562v-poor-nastya-complete-episode-1',
         'md5': '63f8600c1da6f01b7640eee7eca4f1da',
         'info_dict': {
             'id': '50562v',
@@ -196,11 +196,11 @@ class VikiIE(VikiBaseIE):
             'age_limit': 13,
         }
     }, {
-        'url': 'http://www.viki.com/player/44699v',
+        'url': 'https://www.viki.com/player/44699v',
         'only_matching': True,
     }, {
         # non-English description
-        'url': 'http://www.viki.com/videos/158036v-love-in-magic',
+        'url': 'https://www.viki.com/videos/158036v-love-in-magic',
         'md5': '1713ae35df5a521b31f6dc40730e7c9c',
         'info_dict': {
             'id': '158036v',
@@ -326,7 +326,7 @@ class VikiChannelIE(VikiBaseIE):
     IE_NAME = 'viki:channel'
     _VALID_URL = r'%s(?:tv|news|movies|artists)/(?P<id>[0-9]+c)' % VikiBaseIE._VALID_URL_BASE
     _TESTS = [{
-        'url': 'http://www.viki.com/tv/50c-boys-over-flowers',
+        'url': 'https://www.viki.com/tv/50c-boys-over-flowers',
         'info_dict': {
             'id': '50c',
             'title': 'Boys Over Flowers',
@@ -334,7 +334,7 @@ class VikiChannelIE(VikiBaseIE):
         },
         'playlist_mincount': 71,
     }, {
-        'url': 'http://www.viki.com/tv/1354c-poor-nastya-complete',
+        'url': 'https://www.viki.com/tv/1354c-poor-nastya-complete',
         'info_dict': {
             'id': '1354c',
             'title': 'Poor Nastya [COMPLETE]',
@@ -342,13 +342,13 @@ class VikiChannelIE(VikiBaseIE):
         },
         'playlist_count': 127,
     }, {
-        'url': 'http://www.viki.com/news/24569c-showbiz-korea',
+        'url': 'https://www.viki.com/news/24569c-showbiz-korea',
         'only_matching': True,
     }, {
-        'url': 'http://www.viki.com/movies/22047c-pride-and-prejudice-2005',
+        'url': 'https://www.viki.com/movies/22047c-pride-and-prejudice-2005',
         'only_matching': True,
     }, {
-        'url': 'http://www.viki.com/artists/2141c-shinee',
+        'url': 'https://www.viki.com/artists/2141c-shinee',
         'only_matching': True,
     }]
 
